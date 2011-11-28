@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN" "http://castor.org/mapping.dtd">
+<mapping>
+
+<class name="com.all.shared.wall.dto.WallResponse">
+	<map-to xml="wallReponse"/>
+	<field name="wallException" type="com.all.shared.wall.dto.WallException">
+		<bind-xml name="theWallException"/>
+	</field>
+	<field name="initialWallMessageList" type="com.all.shared.wall.domain.InitialWallMessage" collection="arraylist">
+		<bind-xml name="initialWallMessage"/>
+	</field>	
+	<field name="theInitialWallMessage" type="com.all.shared.wall.domain.InitialWallMessage">
+		<bind-xml name="theInitialWallMessage"/>
+	</field>
+	<field name="theReplyWallMessage" type="com.all.shared.wall.domain.ReplyWallMessage">
+		<bind-xml name="theReplyWallMessage"/>
+	</field>
+</class>
+
+<class name="com.all.shared.wall.dto.WallException">
+	<field name="exceptionId" type="string">
+		<bind-xml name="exceptionId" node="attribute"/>
+	</field>
+	<field name="message" type="string">
+		<bind-xml name="message" node="element"/>
+	</field>
+	
+</class>
+
+<class name="com.all.shared.wall.domain.InitialWallMessage">
+   <field name="messageId" type="long">
+      <bind-xml name="messageId" node="attribute"/>
+   </field>
+   <field name="wallOwnerContactId" type="long">
+      <bind-xml name="wallOwnerContactId" node="attribute"/>
+   </field>
+   <field name="messageOwnerContactId" type="long">
+      <bind-xml name="messageOwnerContactId" node="attribute"/>
+   </field>
+   <field name="message" type="string">
+      <bind-xml name="message" node="element"/>
+   </field>
+   <field name="timestamp" type="date">
+      <bind-xml name="timestamp" node="attribute"/>
+   </field>
+   	<field name="replyWallMessageList" type="com.all.shared.wall.domain.ReplyWallMessage" collection="arraylist">
+		<bind-xml name="replyWallMessage"/>
+	</field>
+</class>
+
+<class name="com.all.shared.wall.domain.ReplyWallMessage">
+   <field name="messageId" type="long">
+      <bind-xml name="messageId" node="attribute"/>
+   </field>
+   <field name="initialMessageId" type="long">
+      <bind-xml name="initialMessageId" node="attribute"/>
+   </field>
+   <field name="message" type="string">
+      <bind-xml name="message" node="element"/>
+   </field>
+   <field name="wallOwnerContactId" type="long">
+      <bind-xml name="wallOwnerContactId" node="attribute"/>
+   </field>
+   <field name="messageOwnerContactId" type="long">
+      <bind-xml name="messageOwnerId" node="attribute"/>
+   </field>
+   <field name="timestamp" type="date">
+      <bind-xml name="timestamp" node="attribute"/>
+   </field>
+</class>
+
+</mapping>
