@@ -1,0 +1,8 @@
+ALGORITMO IMPLEMENTADO PARA VALIDAR _LA IMPORTACION_ DE ITUNES 
+___EL PLAYER PUEDE SER DIFERENTE___
+
+1) broken link (no importado): porque no existe el archivo
+2) M4P = DRM protected (no importado): por extension
+3) MP3, FLAC, M4A, OGG,AIFF,WMA,WAV,AU,M4B,MP2 (si importado): por extension
+4) MP4 (si importado): por lectura del archivo
+5) otra extension (no importado): por extension
