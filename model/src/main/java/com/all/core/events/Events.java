@@ -187,7 +187,7 @@
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright [yyyy] [name of copyright owner]
+   Copyright 2011 Eric Haddad Koenig
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -390,7 +390,7 @@
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright [yyyy] [name of copyright owner]
+   Copyright 2011 Eric Haddad Koenig
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -447,12 +447,12 @@ import com.all.shared.newsfeed.AllFeed;
 
 public interface Events {
 	/**
-	 * Errores en acciones o en la aplicación usualmente reaccionan clases para mostrar dialogos o notificar al usuario
+	 * Errores en acciones o en la aplicaciï¿½n usualmente reaccionan clases para mostrar dialogos o notificar al usuario
 	 * con un popup imagen o algo.
 	 */
 	interface Errors {
 		/**
-		 * se intentó invocar una acción que requiere uso de red por lo que la acción falló pero arrojó este lindo evento
+		 * se intentï¿½ invocar una acciï¿½n que requiere uso de red por lo que la acciï¿½n fallï¿½ pero arrojï¿½ este lindo evento
 		 */
 		String NETWORK_REQUIRED_FOR_ACTION_ID = "errors.networkRequiredForAction";
 		EventType<NetworkActionErrorEvent> NETWORK_REQUIRED_FOR_ACTION = ev(NETWORK_REQUIRED_FOR_ACTION_ID);
@@ -481,7 +481,7 @@ public interface Events {
 	}
 
 	/**
-	 * Eventos que se originan por que la libreria del usuario está siendo modificada.
+	 * Eventos que se originan por que la libreria del usuario estï¿½ siendo modificada.
 	 */
 	interface Library {
 		String LOADING_LIBRARY_ID = "library.LoadingLibrary";
@@ -545,7 +545,7 @@ public interface Events {
 	}
 
 	/**
-	 * Eventos relacionados al estado de la aplicación (cosas que se están mostrando, cosas seleccionadas, etc)
+	 * Eventos relacionados al estado de la aplicaciï¿½n (cosas que se estï¿½n mostrando, cosas seleccionadas, etc)
 	 */
 	interface Application {
 		/**
@@ -554,12 +554,12 @@ public interface Events {
 		String SEARCH_TRACKS_ID = "app.SearchTracks";
 		EventType<ValueEvent<SearchState>> SEARCH_TRACKS = ev(SEARCH_TRACKS_ID);
 
-		/** Notifica cuando cambian los tracks que está viendo el usuario. */
+		/** Notifica cuando cambian los tracks que estï¿½ viendo el usuario. */
 		EventType<ValueEvent<Integer>> DISPLAYED_ITEM_COUNT_CHANGED = ev(Model.DISPLAYED_ITEM_COUNT_ID);
 
 		String STARTED_ID = "application.started";
 		/**
-		 * Notifica cuando la aplicación está lista para usarse (modelo inicializado y listo)
+		 * Notifica cuando la aplicaciï¿½n estï¿½ lista para usarse (modelo inicializado y listo)
 		 */
 		EventType<ValueEvent<User>> STARTED = ev(STARTED_ID);
 
