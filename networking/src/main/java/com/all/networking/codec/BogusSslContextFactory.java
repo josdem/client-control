@@ -187,7 +187,7 @@
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright [yyyy] [name of copyright owner]
+   Copyright 2011 Eric Haddad Koenig
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -236,7 +236,7 @@ import org.apache.mina.filter.ssl.BogusTrustManagerFactory;
 
 /**
  * 
- * Esta clase no debe de ser usada en producción. ya que su implementacion no
+ * Esta clase no debe de ser usada en producciï¿½n. ya que su implementacion no
  * solo es del diablo, esta muy chacarrona
  * 
  */
