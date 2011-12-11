@@ -187,7 +187,7 @@
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright [yyyy] [name of copyright owner]
+   Copyright 2011 Eric Haddad Koenig
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -232,7 +232,7 @@ public class TestUser {
 	@Test
 	@Ignore
 	public void shouldNormalizeName() throws Exception {
-		String specialChars =  " Á À Â Ä á à â ä É È Ê Ë é è ê ë í ì î ï ñ ó ò ô ö û ù û ü ";
+		String specialChars =  " ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ï¿½ ";
 		String expectedResult = "a a a a a a a a e e e e e e e e i i i i n o o o o u u u u";
 		String result = new User().createSearchName(specialChars, null);
 		assertEquals(expectedResult, result);
