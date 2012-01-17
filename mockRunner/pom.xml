@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.all.testing</groupId>
+	<artifactId>mockRunner</artifactId>
+	<name>mockRunner</name>
+	<version>${snapshot.version}</version>
+	
+	<parent>
+        <artifactId>parent</artifactId>
+        <groupId>com.all.maven</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+	
+	<repositories>
+		<repository>
+			<id>ArchivaSnapshots</id>
+			<url>http://ci.undahee.net/archiva/repository/snapshots</url>
+		</repository>
+		<repository>
+			<id>ArchivaInternal</id>
+			<url>http://ci.undahee.net/archiva/repository/internal</url>
+		</repository>
+	</repositories>
+	
+	<distributionManagement>
+		<repository>
+			<id>archiva.internal</id>
+			<name>Internal Release Repository</name>
+			<url>http://ci.undahee.net/archiva/repository/internal</url>
+		</repository>
+		<snapshotRepository>
+			<id>archiva.snapshots</id>
+			<name>Internal Snapshot Repository</name>
+			<url>http://ci.undahee.net/archiva/repository/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<dependencies>
+	    <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito.version}</version>
+            <scope>provided</scope>
+        </dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>${commons-logging.version}</version>
+		</dependency>
+	</dependencies>
+	
+</project>
