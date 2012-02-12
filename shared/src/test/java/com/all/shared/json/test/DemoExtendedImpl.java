@@ -201,7 +201,9 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-mport com.all.shared.model.User;
+package com.all.shared.json.test;
+
+import com.all.shared.model.User;
 
 public class DemoExtendedImpl implements DemoInterface {
 
